@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+  	<script src="js/script.js"></script>
+</head>
+<body style="background-color:#EEEED1">
+	
+		<div class="header">
+			<h2>Registration</h2>
+		</div><br><br><br><br><br><br><br><br>
+		<div class="container">
+		<div class="Content">
+			<form novalidation>
+
+				<div class="col-sm-12">
+					<div class="col-md-2 ">
+						<label>Name*:</label>
+					</div>
+					<div  class="col-md-0">
+						<input type="text"  id="Name" name="Name"  Placeholder="Name" required="true" max="10" min="6" />	
+				</div>
+			</div>
+				<div class="col-sm-12">
+					<div class="col-md-2 ">
+						<label>Email*:</label>
+					</div>
+					<div class="col-md-0">
+						<input type="email"   id="Email"  name="Email"  Placeholder="Email" required="true">
+					</div>
+				</div>	
+				<div class="col-sm-12">
+					<div class="col-md-2 ">
+						<label>Password*:</label>
+					</div>
+					<div class="col-md-0 ">
+						<input type="password"  id="Password" name="Password" Placeholder="Password" required="true" min="8" max="10">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="col-md-2 ">
+						<label>Confirm Password*:</label>
+					</div>
+					<div class="col-md-0 ">
+						<input  id= "confirm" name= "confirm" type="password" placeholder="Password"  class="confirm">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="col-md-2">
+						<label>Gender*:</label>
+					</div>
+					<div class="col-md-0 ">
+						<input type="radio" id="sex" name="sex" value="male">Male
+						<input type="radio" id="sex" name="sex" value="female">Female
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="col-md-2 ">
+						<label>Mobile Number*:</label>
+					</div>
+					<div class="col-md-0">
+						<input type="text" class="number" id="Mobile Number" name="Mobile Number" placeholder="MobileNumber" required="true">
+					</div>
+				</div>
+				
+				<div class="col-sm-12">
+					<div class="col-md-2 ">
+						<label>Select City*:</label>
+					</div>
+					<div class="col-md-0 ">
+						<select name="area" >
+							<option value="0">Select your City</option>
+							<option value="vizag">London</option>
+							<option value="hyd">Melbourne</option>
+							<option value="kkd">Kakinada</option>
+							<option value="rjy">Ganganapalli</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="col-md-2 ">
+						<label>Skills*:</label>
+					</div>
+					<div class="col-md-0 ">
+						<input type="text" id="some skills" name="some skills" max="150" min="12" placeholder="Text Here..." required="true" style="height:80px; width:350px;"/>
+					</div>
+				</div>
+				
+					
+					<div class="col-sm-12" style="font-size:10px;margin-left:160px;">*
+						<input type="checkbox"  value="Car">Terms and conditions apply
+					</div>
+				
+				<div class="col-sm-12">
+					<div class="col-md-3 col-md-offset-3">
+						<input type="submit" value="Submit" >
+				   </div>	
+				</div>
+			</form>
+			
+		</div>
+	</div>
+
+</body>
+</html>
